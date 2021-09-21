@@ -10,7 +10,7 @@
 - JONATHAN NAVARRO
 
 - HENRY ERASO
-> Soy de la ciudad de Pasto y tengo 23 años. Actualmente soy estudiante de Ingenieria de Petroleos en la Universidad Industrial de Santander.
+> Soy de la ciudad de Pasto, tengo 23 años. Actualmente soy estudiante de Ingenieria de Petroleos en la Universidad Industrial de Santander.
 
 
 ## Descripcion
