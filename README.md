@@ -1,6 +1,6 @@
-#PROYECTO FINAL 
+# PROYECTO FINAL 
 ######  ["MISION TIC 2022 - CICLO III "](https://www.misiontic2022.gov.co/ "MISION TIC 2022")
-##Colaboradores
+## Colaboradores
 - MAURICIO SIABATA
 - JOHN PULIDO
 - JOHN HURTADO
