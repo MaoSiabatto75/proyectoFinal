@@ -2,10 +2,15 @@
 ######  ["MISION TIC 2022 - CICLO III "](https://www.misiontic2022.gov.co/ "MISION TIC 2022")
 ## Colaboradores
 - MAURICIO SIABATA
+
 - JOHN PULIDO
+
 - JOHN HURTADO
+
 - JONATHAN NAVARRO
+
 - HENRY ERASO
+> Soy de la ciudad de Pasto y tengo 23 años. Actualmente soy estudiante de Ingenieria de Petroleos en la Universidad Industrial de Santander.
 
 
 ## Descripcion
