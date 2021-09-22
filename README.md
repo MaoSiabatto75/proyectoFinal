@@ -4,7 +4,7 @@
 - MAURICIO SIABATA
 
 - JOHN PULIDO
-
+> Soy egresado de psicología  y trabajo actualmente en ello. Ingresé al curso del MinTic porque siempre me ha gustado la tecnología y resolver problemas.
 - JOHN HURTADO
 
 - JONATHAN NAVARRO
