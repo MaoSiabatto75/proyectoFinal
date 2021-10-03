@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter,Switch,Route} from 'react-router-dom';
+import PrivateRoute from './PrivateRoute'
+import LogIn from './pages/LogIn'
+import NotFoundPage from './pages/NotFoundPage'
+import {routes} from './routes'
+import AuthProvider from './auth/AuthProvider';
+import PublicRoute from './PublicRoute';
+import Dashboard from './pages/Dashboard';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <AuthProvider>
+          <Switch>
+              <PublicRoute exact path={routes.login} component={LogIn} />
+              <PrivateRoute extact path={routes.home} component={Dashboard}/>
+              <Route path="*" component={NotFoundPage} />
+          </Switch>
+        </AuthProvider>
+    </BrowserRouter> 
   );
 }
-
-export default App;

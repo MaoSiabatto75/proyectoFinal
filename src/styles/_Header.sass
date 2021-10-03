@@ -1,0 +1,28 @@
+.content 
+    position: relative
+    left: 260px
+    height: 100vh
+    width: calc(100%-260px)
+    background: #E4E9F7
+    transition: all 0.5s ease
+    .header
+        height: 60px
+        display: flex
+        align-items: center
+        #btn
+            height: 30px
+            color: #11101d
+            font-size: 35px
+            margin: 0 15px
+        .text
+            color: #11101d
+            font-size: 26px
+            font-weight: 600
+    .main
+        height: 100%
+
+.sidebar.active 
+    ~ .content
+        left: 78px
+        width: calc(100%-78px)
+

@@ -1,0 +1,201 @@
+.sidebar
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 260px
+    background:#11101d
+    transition: all 0.5s ease
+    z-index: 100
+    
+    .logo_details
+        height: 60px
+        width: 100%
+        display: flex
+        align-items: center
+
+        .icon
+            font-size: 30px
+            color: #fff
+            height: 30px
+            min-width: 78px
+            text-align: center
+            line-height: 50px
+
+        .logo_name
+            color: #fff
+            font-size: 22px
+            font-weight: 600
+            transition: 0.3s ease
+            transition-delay: 0.1s
+    
+    .nav_list
+        height: 100%
+        padding: 30px 0 150px 0
+        overflow: auto
+        
+        &::-webkit-scrollbar
+            display: none
+        
+        li
+            position: relative
+            list-style: none
+            transition: all 0.4s ease
+            padding: 10px 0px
+            &:hover
+                background: #1d1b31
+                .sub-menu.blank
+                    top: 50%
+                    transform: translateY(-20%)
+            .icon
+                height: 22px
+                min-width: 78px
+                text-align: center
+                line-height: 50px
+                color: #fff
+                font-size: 20px
+                transition: all 0.3s ease
+                cursor: pointer
+            a
+                display: flex
+                text-decoration: none
+                align-items: center
+                color: #fff
+                .links_name
+                    font-size: 18px
+                    font-weight: 400
+                    color: #fff
+                    transition: all 0.4s ease
+            .iocn-link
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .arrow 
+                    height: 15px 
+            .sub-menu
+                padding: 6px 6px 14px 80px
+                margin-top: -10px
+                background: #1d1b31
+                color: #fff
+                opacity: 1
+                display: none
+                a
+                    color: #fff
+                    font-size: 15px
+                    padding: 5px 0
+                    white-space: nowrap
+                    opacity: 0.6
+                    transition: all 0.3s ease
+                    &:hover
+                        opacity: 1
+                a.active-sub-link
+                    background-color: #fff
+                    border-top-left-radius: 20px
+                    border-bottom-left-radius: 20px
+                    margin-left: 10px
+                    margin-right: -7px
+                    padding: 10px 0 10px 15px
+                    color: #1d1b31
+                .links_name
+                    display: none
+
+            .sub-menu.blank
+                pointer-events: auto
+                padding: 3px 20px 6px 16px
+                opacity: 0
+                pointer-events: none
+            
+        a.active-link
+            margin-left: 10px
+            transition: all 0.5s ease
+            .icon
+                background-color: #E4E9F7
+                border-radius: 50px
+                color: #1d1b31
+            .links_name
+                margin-left: 15px
+        li.showMenu 
+            .icon.arrow
+                transform: rotate(-180deg)
+            .sub-menu
+                display: block
+    
+    .profile-details
+        position: fixed
+        bottom: 0
+        width: 260px
+        display: flex
+        align-items: center
+        justify-content: space-around
+        background: #1d1b31
+        padding: 6px 0
+        transition: all 0.5s ease
+        .profile-content
+            display: flex
+            align-items: center
+            background: none
+            border: none
+        .profile-name
+            color: #fff
+            font-size: 18px
+            font-weight: 500
+            white-space: nowrap
+        #log_out
+            border-radius: 20px
+            background: #1d1b31
+            transition: all 0.5s ease
+
+.sidebar.active
+    width: 78px
+    .logo_details 
+        .logo_name
+            opacity: 0
+            pointer-events: none
+            transition-delay: 0s
+    
+    .nav_list
+        overflow: visible
+        .icon.arrow
+                display: none
+        li
+            a
+                .links_name
+                    opacity: 0
+                    pointer-events: none
+            a.active-link
+                .links_name
+                    opacity: 0
+                    pointer-events: none
+            .iocn-link
+                display: block
+            .sub-menu
+                position: absolute
+                color: #fff
+                left: 100%
+                top: -10px
+                margin-top: 0
+                padding: 10px 20px
+                border-radius: 0 6px 6px 0
+                opacity: 0
+                display: block
+                pointer-events: none
+                transition: 0s
+                .links_name
+                    font-size: 18px
+                    opacity: 1
+                    display: block
+            &:hover
+                .sub-menu
+                    top: 0
+                    opacity: 1
+                    pointer-events: auto
+                    transition: all 0.4s ease
+    .profile-details
+        width: 78px
+        background: none
+        #log_out
+            height: 45px
+            padding: 8px 0
+            margin: 10px 0
+        .profile-name
+            display: none
